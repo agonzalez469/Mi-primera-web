@@ -3,7 +3,6 @@
 <head>
 	<meta charset="utf-8">
 </head>
-
 <script>
 	var salutacio = "Hola món";
 	var ElMeuNom = "Andrea Gonzalez Parals";
@@ -12,13 +11,45 @@
 	var z = x+y;
 	var preu1 = 2.55;
 	var preu2 = 5.15;
-	var preuTotal = "El preu final és de " + (preu1 + preu2);
-
+	var preu3 = 4.20;
+	var preuTotal = preu1 + preu2 + preu3;
+	var edat = 24;
 
 	alert (salutacio);
 	alert (ElMeuNom); 
 	alert (z);
 	alert (preuTotal);
+
+	if (preuTotal <10) {
+		alert ('El preu no supera els 10 euros');
+	}
+	else {
+		alert ("El preu supera els 10 euros");
+	}
+	/*condicions, else*/
+	if (preuTotal <5) {
+		alert ("El preu no supera els 5 euros");
+	}
+	else if (preuTotal <10) {
+		alert ("El preu no supera els 10 euros");
+	}
+	else {
+		alert ("El preu supera els 10 euros");
+	}
+	/*condicions else-if: si el preu és més petit de 5 mostrarà la primera alerta, si es més petit de 10 mostrará la segona alerta, si no es compleix cap d'aquestes dues condicions mostarà la última alerta.*/
+	if (edat < 30) {
+		alert ("La teva edat està per sota de 30")
+	}
+	else if (edat <40) {
+		alert ("La teva edat està per sota de 40")
+	}
+	else if (edat <50) {
+		alert ("La teva edat està per sota de 50")
+	}
+	else if (edat >50) {
+		alert ("La teva edat és més de 50")
+	}
+	/*Exemple d'activitat amb més d'una condició.*/
 </script>
 <body>
 	<h2>El meu primer JavaScript</h2>
